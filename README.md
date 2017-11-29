@@ -1,20 +1,21 @@
 # CKEditor Package
 
-p.s. Instead of using this package, I recommend just follow the official CKEditor installation instructions with package managers
-
 Installation
 
 Set up package
 
-composer require unisharp/laravel-ckeditor
+    composer require unisharp/laravel-ckeditor
+
 Add ServiceProvider
 
 Edit config/app.php, add the following file to Application Service Providers section.
 
-Unisharp\Ckeditor\ServiceProvider::class,
+    Unisharp\Ckeditor\ServiceProvider::class,
+
 Publish the resources
 
-php artisan vendor:publish --tag=ckeditor
+    php artisan vendor:publish --tag=ckeditor
+
 Usage
 
 Default way (initiate by name or id) :
